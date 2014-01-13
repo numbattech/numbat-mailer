@@ -1,0 +1,27 @@
+{
+  "rateLimits": "Settings to limit the number of e-mails which can be sent by one user",
+  "rateLimits": {
+    "totalRequests": 5,
+    "every":         3600000
+  },
+
+  "maxRequestSize": "The maximum size of the HTTP requests that we will process",
+  "maxRequestSize": "10kb",
+
+  "from": "The address from which mail will be sent",
+  "from": "contactform@numbattech.com",
+
+  "allowedDestinations": "A list of destinations that mail is allowed to be sent to",
+  "allowedDestinations": [
+    "james@numbattech.com"
+  ],
+
+  "transport": "Nodemailer SMTP config, see http://www.nodemailer.com/docs/transports",
+  "transport": {
+    "service": "Mailgun",
+    "auth": {
+        "user": "",
+        "pass": ""
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "numbat-mailer",
+  "version": "0.0.1",
+  "description": "Express app to forward messages to one of a list of allowed addresses",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/numbattech/numbat-mailer.git"
+  },
+  "keywords": [
+    "mail",
+    "mailer",
+    "express",
+    "contact form"
+  ],
+  "author": "James K Nelson <james@numbattech.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "4c5c7d79e40517eee4e036a48e46dbb700d56ff8",
+  "dependencies": {
+    "nodemailer": "~0.6.0",
+    "express": "~3.4.7",
+    "connect-ratelimit": "0.0.6"
+  }
+}
