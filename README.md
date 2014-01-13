@@ -22,4 +22,4 @@ You can use the default `app.js` with nodemon, so the server will be automatical
 npm install nodemon -g
 ```
 
-Then start the server with `nodemon` in the directory with `app.js`.
+Then start the server with nodemon, just run `nodemon app.js`.

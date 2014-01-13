@@ -1,10 +1,11 @@
 {
   "name": "numbat-mailer",
   "version": "0.0.1",
-  "description": "Express app to forward messages to one of a list of allowed addresses",
-  "main": "app.js",
+  "description": "Express app to send emails to one of a list of allowed addresses",
+  "main": "lib/mailer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,16 @@
     "express",
     "contact form"
   ],
+  "files": [
+    "lib/mailer.js",
+    "app.js",
+    "config.json.example",
+    "LICENSE",
+    "README.md"
+  ],
   "author": "James K Nelson <james@numbattech.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "4c5c7d79e40517eee4e036a48e46dbb700d56ff8",
   "dependencies": {
     "nodemailer": "~0.6.0",
     "express": "~3.4.7",

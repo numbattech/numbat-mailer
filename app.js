@@ -8,6 +8,10 @@ var app = express();
 // Don't send the x-powered-by header
 app.disable('x-powered-by');
 
+// Enable reverse-proxy support (for use with nginx), and set up logging
+app.set('trust proxy', true);
+app.use(express.logger('default'));
+
 // Make our mailer respond to '/send'
 app.use('/send', mailer(config));
 
